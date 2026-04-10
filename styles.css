@@ -5,217 +5,140 @@
     box-sizing: border-box;
 }
 
-/* SMOOTH SCROLL */
-html {
-    scroll-behavior: smooth;
-}
-
 /* BODY */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0f0f0f;
-    color: white;
-
+    background: #f7efe5;
+    color: #4b3f3f;
     display: flex;
     justify-content: center;
 }
 
 /* CONTAINER */
 .container {
+    max-width: 800px;
     width: 100%;
-    max-width: 900px;
+    padding: 10px;
 }
 
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
     padding: 20px;
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
+    background: rgba(255, 250, 247, 0.7);
     backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .logo {
     font-family: 'Playfair Display', serif;
-    color: #ff66b2;
-    font-size: 1.6rem;
-}
-
-/* NAV LINKS */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    color: #e895a8;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+text-decoration: none;
+color: #4b3f3f;
+transition: 0.3s;
+
 }
 
 .nav-links a:hover {
-    color: #ff66b2;
+    color: #e895a8;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 70px 20px;
+    padding: 60px 20px;
 }
 
 .hero-logo {
-    width: 180px;
-    margin-bottom: 15px;
-}
-
-.hero h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-}
-
-.hero p {
-    opacity: 0.8;
-    font-size: 0.9rem;
+    width: 160px;
+    margin-bottom: 10px;
 }
 
 /* BUTTON */
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-
-    background: #ff66b2;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #f4a7b9;
     color: white;
-
-    border-radius: 30px;
+    border-radius: 25px;
     text-decoration: none;
 
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
-
 .btn:hover {
-    background: white;
-    color: #ff66b2;
-    box-shadow: 0 0 15px rgba(255, 102, 178, 0.6);
+    background: #e895a8;
+    box-shadow: 0 5px 15px rgba(232, 149, 168, 0.4);
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
     padding: 70px 20px;
     text-align: center;
 }
 
-.section h2 {
+h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
+    color: #5a4a4a;
 }
 
-.section.dark {
-    background: #1a1a1a;
+/* GRID (FOR CARDS) */
+.grid {
+    display: grid;
+    gap: 15px;
 }
 
-/* IMAGES */
-.content-img {
-    width: 100%;
-    max-width: 260px;
-    margin: 20px auto;
-    display: block;
-
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
+/* CARDS */
+.card {
+    background: #fffaf7;
     padding: 20px;
-    background: black;
-    font-size: 0.8rem;
+    border-radius: 20px;
+
+    border: 2px solid #f1d6dc;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+
+    margin: 15px auto;
 }
 
-/* ANIMATION */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 1s ease forwards;
+.card h3 {
+    margin-bottom: 10px;
 }
 
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* GALLERY */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin-top: 20px;
 }
 
-/* TABLET */
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE */
 @media (min-width: 600px) {
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-/* DESKTOP */
-@media (min-width: 900px) {
-    .gallery-grid {
-        grid-template-columns: repeat(4, 1fr);
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* GALLERY IMAGES */
-.gallery-grid img {
-    width: 100%;
-    border-radius: 12px;
-    transition: 0.3s;
+.card p {
+    margin: 6px 0;
 }
 
-/* HOVER EFFECT */
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* MODAL BACKGROUND */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.9);
-}
-
-/* MODAL IMAGE */
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 10px;
-}
-
-/* CLOSE BUTTON */
-.close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }

@@ -10,80 +10,136 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
 
 <div class="container">
 
     <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">nail_sxnat</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#prices">Prices</a></li>
-                <li><a href="#policies">Policies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <h1 class="logo">nail_sxnat</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#policies">Policies</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- HERO -->
-    <section id="home" class="hero fade-in">
-        <img src="images/logo.png" alt="logo" class="hero-logo">
-        <h2>Luxury Nail Services</h2>
-        <p>Clean. Precise. Beautiful sets every time.</p>
-        <a href="#contact" class="btn">Book Now</a>
-    </section>
-
-    <!-- PRICES -->
-    <section id="prices" class="section fade-in">
-        <h2>Price List</h2>
-        <img src="images/prices.png" alt="prices" class="content-img">
-    </section>
-
-    <!-- POLICIES -->
-    <section id="policies" class="section dark fade-in">
-        <h2>Policies</h2>
-        <img src="images/policies.png" alt="policies" class="content-img">
-    </section>
-
-<!-- GALLERY -->
-<section id="gallery" class="section fade-in">
-    <h2>Gallery</h2>
-
-    <div class="gallery-grid">
-        <img src="images/nail1.jpg" alt="nails">
-        <img src="images/nail2.jpg" alt="nails">
-        <img src="images/nail3.jpg" alt="nails">
-        <img src="images/nail4.jpg" alt="nails">
-        <img src="images/nail5.jpg" alt="nails">
-        <img src="images/nail6.jpg" alt="nails">
-    </div>
-</section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section fade-in">
-        <h2>Contact & Booking</h2>
-        <p>DM on Instagram to book your appointment</p>
-        <a href="https://www.instagram.com/nail_sxnat/" target="_blank" class="btn">Book on Instagram →
+    <section id="home" class="hero">
+        <img src="images/logo.png" class="hero-logo">
+        <h2>Luxury Nail Sets</h2>
+        <p>Book your next flawless set with precision and style.</p>
+        <a href="https://www.instagram.com/nail_sxnat/" target="_blank" class="btn">
+            Book Your Set 💅
         </a>
     </section>
 
-    <!-- FOOTER -->
+    <!-- PRICES -->
+    <section id="prices" class="section">
+        <h2>Price List</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Acrylic Sets</h3>
+                <p><strong>Extra Short (0 Magnets)</strong> — $30</p>
+                <p><strong>Short (1-2 Magnets)</strong> — $35</p>
+                <p><strong>Medium (3-4 Magnets)</strong> — $40</p>
+                <p><strong>Medium Long (5-6 Magnets)</strong> — $45</p>
+                <p><strong>Long (7-8 Magnets)</strong> — $50</p>
+                <p><strong>Extra Long (9-10 Magnets)</strong> — $55</p>
+            </div>
+
+            <div class="card">
+                <h3>Refills</h3>
+                <p><strong>Extra Short</strong> — $25</p>
+                <p><strong>Short</strong> — $30</p>
+                <p><strong>Medium</strong> — $35</p>
+                <p><strong>Medium Long</strong> — $40</p>
+                <p><strong>Long</strong> — $45</p>
+                <p><strong>Extra Long</strong> — $50</p>
+            </div>
+
+            <div class="card">
+                <h3>Extras</h3>
+                <p>Gel Manicure (Solid Color) — $10</p>
+                <p>Gel Manicure (With Design) — $15</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- POLICIES -->
+    <section id="policies" class="section">
+        <h2>Booking Policy</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Time</h3>
+                <p>I'm a beginner nail tech, sets may take 2-4 hours.</p>
+                <p>Please come with patience and nothing scheduled after your appointment!/p>
+            </div>
+
+            <div class="card">
+                <h3>Deposit</h3>
+                <p>$10 deposit is required to book.</p>
+                <p>The deposit goes to your remaining balance.</p>
+            </div>
+
+            <div class="card">
+                <h3>Grace Period</h3>
+                <p>You are given a 10 minute grace period.</p>
+                <p>After 20 minutes your appointment will be cancelled.</p>
+            </div>
+
+            <div class="card">
+                <h3>No Call/No Show</h3>
+                <p>No call/No Show = Blocked.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Payment</h3>
+                <p>Cash or Cashapp for the deposit!</p>
+            </div>
+
+            <div class="card">
+                <h3>Extras</h3>
+                <p>No extra guests allowed.</p>
+                <p> No kids, please.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <h2> class="fancy-title"🌸 My Work! 🌸</h2>
+
+        <div class="gallery-grid">
+            <img src="images/nail1.jpg" alt="Nail design">
+            <img src="images/nail2.jpg" alt="Nail design">
+            <img src="images/nail3.jpg" alt="Nail design">
+            <img src="images/nail4.jpg" alt="Nail design">
+            <img src="images/nail5.jpg" alt="Nail design">
+            <img src="images/nail6.jpg" alt="Nail design">
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>DM on Instagram to book your appointment</p>
+        <a href="https://www.instagram.com/nail_sxnat/" target="_blank" class="btn">
+            Book Now
+        </a>
+    </section>
+
     <footer>
         <p>© 2026 nail_sxnat</p>
     </footer>
 
 </div>
-
-<!-- IMAGE MODAL -->
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
-
-<script src="script.js"></script>
 
 </body>
 </html>
